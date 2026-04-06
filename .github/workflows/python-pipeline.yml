@@ -91,5 +91,5 @@ jobs:
         run: docker pull ghcr.io/${REPO_LOWER}:${{ github.sha }}   
       - name: Run the Image
      #   run: docker run --rm ghcr.io/${{ github.repository }}:${{ github.sha }} | grep -i hello || exit 1
-      run: docker run --rm ghcr.io/${REPO_LOWER}:${{ github.sha }} | grep -i hello || exit 1
+        run: docker run --rm ghcr.io/${REPO_LOWER}:${{ github.sha }} | grep -i hello || exit 1
    
